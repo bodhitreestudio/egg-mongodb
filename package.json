@@ -1,0 +1,50 @@
+{
+  "name": "egg-mongodb",
+  "version": "0.0.1",
+  "description": "Mongodb plugin for egg",
+  "eggPlugin": {
+    "name": "MongoDB"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "mongodb",
+    "database"
+  ],
+  "dependencies": {
+    "mongodb": "^3.5.7"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "egg": "latest-1",
+    "egg-bin": "^4.7.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.17.1",
+    "eslint": "^4.19.1",
+    "eslint-config-egg": "^7.0.0",
+    "supertest": "^3.1.0",
+    "utility": "^1.13.1"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bodhitreestudio/egg-mongodb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bodhitreestudio/egg-mongodb/issues"
+  },
+  "homepage": "https://github.com/bodhitreestudio/egg-mongodb#readme",
+  "author": "Bodhi Hu",
+  "license": "MIT"
+}
