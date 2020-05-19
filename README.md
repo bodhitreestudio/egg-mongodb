@@ -32,6 +32,9 @@ exports.mongodb = {
     user: 'user',
     password: 'password',
     options: {},
+
+    // or simply with url:
+    url: "mongodb://composer:Pwd123@localhost:27017/appDb"
   },
 };
 ```
@@ -42,6 +45,10 @@ exports.mongodb = {
 // mongodb://host1:port1,host2:port2/mydb?replicaSet=test
 exports.mongodb = {
   client: {
+    // simply with url:
+    url: "..."
+
+    // or
     host: 'host1,host2',
     port: 'port1,port2',
     database: 'mydb',
